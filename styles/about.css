@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+#main {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.img img{
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: 1px 3px 20px rgba(0, 0, 0, 0.2);
+}
+#main header {
+  height: 5vmax;
+  width: 100%;
+  background-color: #820300;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  position: relative;
+}
+#page1 {
+  display: flex;
+  padding: 5vmax;
+  gap: 2vmax;
+  align-items: center;
+  position: relative;
+  color: #ffff;
+}
+.text span {
+  font-size: 1.3vmax;
+  font-weight: 600;
+}
+.text h1 {
+  font-size: 5vmax;
+  line-height: 1;
+}
+.text p {
+  text-align: justify;
+  font-size: 1.2vmax;
+  font-weight: 500;
+}
+#page2 {
+height: 15vmax;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#page2 span{
+  font-size: 1.5vmax;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  background-color: #820300;
+  align-items: center;
+  /* padding: 0 10vmax; */
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+footer nav ul li {
+  list-style: none;
+  transition: all 0.5s;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1vmax;
+}
+footer nav ul li:hover {
+  transform: translateX(10px);
+}
+footer .logo h1 {
+  text-align: center;
+  color: #ffff;
+  font-size: 3vmax;
+}
+.icons {
+  display: flex;
+  font-size: 1.6vmax;
+  gap: 2vmax;
+  color: #ffff;
+}
+.icons a {
+  color: #ffff;
+  transition: all 0.5s;
+}
+.icons a:hover {
+  color: #e23634;
+}
+footer .con {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  color: #ffff;
+}
+.bg-img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -111;
+  left: 0;
+}
+.bg-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+filter: brightness(60%);
+}
