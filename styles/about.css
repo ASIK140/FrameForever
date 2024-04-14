@@ -55,11 +55,12 @@ align-items: center;
 }
 #page2 span{
   font-size: 1.5vmax;
+text-align: center;
+
 }
 footer {
   display: flex;
   justify-content: space-evenly;
-  height: 40vh;
   background-color: #820300;
   align-items: center;
   /* padding: 0 10vmax; */
@@ -120,6 +121,14 @@ filter: brightness(60%);
 }
 
 @media (width<600px) {
+  #page1 {
+    flex-direction: column;
+  }
+  .img img{
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+  }
   footer{
     flex-direction: column;
     gap: 5vmax;
@@ -144,5 +153,8 @@ filter: brightness(60%);
   }
   .f-left nav ul li a{
     font-size: 2vmax;
+  }
+  #page2 {
+    padding: 2vmax;
   }
 }
