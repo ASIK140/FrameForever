@@ -10,131 +10,159 @@
   box-sizing: border-box;
   position: relative;
 }
-#main header{
-    height: 10vmax;
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.header {
+  height: 10vmax;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#main header img{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -11;
+.header img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -11;
 }
-#main header h1{
-    color: #fff;
-    font-size: 5vmax;
-    font-weight: 400;
-    letter-spacing: 6px;
-    text-align: center;
-    line-height: 1;
-    text-transform: uppercase;
+.header h1 {
+  color: #fff;
+  font-size: 5vmax;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
 }
-#main header span{
-    color: #fff;
-    font-size: 1.2vmax;
-    letter-spacing: 18px;
+.header span {
+  color: #fff;
+  font-size: 1.2vmax;
+  letter-spacing: 18px;
 }
-.banner{
-    padding: 2vmax 10vmax;
-    height: 50vh;
+.banner {
+  padding: 2vmax 10vmax;
+  height: 50vh;
 }
-.banner img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
-.text{
-    padding: 5vmax 10vmax;
-    display: flex;
-    flex-direction: column;
-    gap: 5vmax;
+.text {
+  padding: 5vmax 10vmax;
+  display: flex;
+  flex-direction: column;
+  gap: 5vmax;
 }
-.text p{
-    text-align: justify;
-    font-size: 1.3vmax;
+.text p {
+  text-align: justify;
+  font-size: 1.3vmax;
 }
-.text h1{
-    font-size: 2vmax;
-    margin-bottom: 2vmax;
-    font-weight: 500;
+.text h1 {
+  font-size: 2vmax;
+  margin-bottom: 2vmax;
+  font-weight: 500;
 }
-.pro{
-    display: flex;
-    flex-direction: column;
-    gap: 2vmax;
-    margin-top: 5vmax;
+.pro {
+  display: flex;
+  flex-direction: column;
+  gap: 2vmax;
+  margin-top: 5vmax;
 }
-.pro span{
-    font-size: 1.5vmax;
-    font-weight: 500;
-    list-style: decimal;
+.pro span {
+  font-size: 1.5vmax;
+  font-weight: 500;
+  list-style: decimal;
 }
-.pro li{
-    font-size: 1.3vmax;
-    font-weight: 600;
+.pro li {
+  font-size: 1.3vmax;
+  font-weight: 600;
 }
-.pro ul{
-padding:0 3vmax;
+.pro ul {
+  padding: 0 3vmax;
 }
-.pro ul li{
-    margin-top: 1vmax;
-    text-align: justify;
-    font-weight: 400;
-    list-style: upper-alpha;
+.pro ul li {
+  margin-top: 1vmax;
+  text-align: justify;
+  font-weight: 400;
+  list-style: upper-alpha;
 }
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    height: 40vh;
-    background-color: #820300;
-    align-items: center;
-    /* padding: 0 10vmax; */
-  }
-  
-  footer nav ul {
-    display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+  background-color: #820300;
+  align-items: center;
+  /* padding: 0 10vmax; */
+}
+
+footer nav ul {
+  display: flex;
+  flex-direction: column;
+}
+footer nav ul li {
+  list-style: none;
+  transition: all 0.5s;
+}
+footer nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1vmax;
+}
+footer nav ul li:hover {
+  transform: translateX(10px);
+}
+footer .logo h1 {
+  text-align: center;
+  color: #ffff;
+  font-size: 3vmax;
+}
+.icons {
+  display: flex;
+  font-size: 1.6vmax;
+  gap: 2vmax;
+  color: #ffff;
+}
+.icons a {
+  color: #ffff;
+  transition: all 0.5s;
+}
+.icons a:hover {
+  color: #e23634;
+}
+footer .con {
+  display: flex;
+  flex-direction: column;
+  gap: 1vmax;
+  color: #ffff;
+}
+
+@media (width<600px) {
+  footer{
     flex-direction: column;
+    gap: 5vmax;
+
   }
-  footer nav ul li {
-    list-style: none;
-    transition: all 0.5s;
+  footer .con{
+    align-items: center;
+    gap: 2vmax;
   }
-  footer nav ul li a {
-    text-decoration: none;
-    color: #ffff;
-    font-size: 1vmax;
-  }
-  footer nav ul li:hover {
-    transform: translateX(10px);
-  }
-  footer .logo h1 {
-    text-align: center;
-    color: #ffff;
+  .contact{
+    flex-direction: column;
     font-size: 3vmax;
   }
-  .icons {
-    display: flex;
-    font-size: 1.6vmax;
-    gap: 2vmax;
-    color: #ffff;
+  .icons{
+    font-size: 3vmax;
   }
-  .icons a {
-    color: #ffff;
-    transition: all 0.5s;
-  }
-  .icons a:hover {
-    color: #e23634;
-  }
-  footer .con {
+  .f-left{
     display: flex;
     flex-direction: column;
-    gap: 1vmax;
-    color: #ffff;
+    align-items: center;
+    gap: 2vmax;
   }
+  .f-left nav ul li a{
+    font-size: 2vmax;
+  }
+}

@@ -6,13 +6,13 @@
 }
 #main {
   display: flex;
-  align-items: center;
   width: 100%;
   min-height: 110vh;
   gap: 2vmax;
-  padding: 5vmax 0;
+  align-items: center;
   flex-direction: column;
   position: relative;
+  padding: 5vmax 0;
 }
 #main h1 {
   font-size: 4vmax;
@@ -22,6 +22,7 @@
 .package {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1vmax;
 }
 .pack {
@@ -85,4 +86,37 @@
   width: 100%;
   object-fit: cover;
   filter: brightness(60%);
+}
+@media (width<600px) {
+  header nav{
+    display: none;
+  }
+  .pack {
+    width: 70%;
+  }
+  footer{
+    flex-direction: column;
+    gap: 5vmax;
+
+  }
+  footer .con{
+    align-items: center;
+    gap: 2vmax;
+  }
+  .contact{
+    flex-direction: column;
+    font-size: 3vmax;
+  }
+  .icons{
+    font-size: 3vmax;
+  }
+  .f-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vmax;
+  }
+  .f-left nav ul li a{
+    font-size: 2vmax;
+  }
 }
