@@ -10,7 +10,7 @@
   box-sizing: border-box;
   position: relative;
 }
-.header {
+.header2 {
   height: 10vmax;
   width: 100%;
   position: relative;
@@ -19,14 +19,14 @@
   align-items: center;
   flex-direction: column;
 }
-.header img {
+.header2 img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: -11;
 }
-.header h1 {
+.header2 h1 {
   color: #fff;
   font-size: 5vmax;
   font-weight: 400;
@@ -35,7 +35,7 @@
   line-height: 1;
   text-transform: uppercase;
 }
-.header span {
+.header2 span {
   color: #fff;
   font-size: 1.2vmax;
   letter-spacing: 18px;

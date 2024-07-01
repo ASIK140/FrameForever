@@ -1,90 +1,95 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5vh 5vh;
+  background-color: #820300;
+  color: #ffff;
+  height: 7vh;
+  background-color: rgba(0, 0, 0, 1);
+  width: calc(100% - 10vh);
+  transition: all 0.3s;
+  z-index: 99;
+}
+.header.sticky {
+  position: fixed;
+  background-color: #000;
+}
+header nav ul {
+  display: flex;
+  gap: 2.5vw;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3vmax;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+header nav ul li a:hover {
+  color: #ee433d;
+}
+.logo {
+  font-size: 1.5vmax;
+}
+.logo h1 {
+  cursor: pointer;
+}
 
- header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5vh 5vh;
-    background-color: #820300;
-    color: #ffff;
-    height: 7vh;
-    background-color: rgba(0, 0, 0, 1);
-  }
-   header nav ul {
-    display: flex;
-    gap: 2.5vw;
-  }
-   header nav ul li {
-    list-style: none;
-  }
-   header nav ul li a {
-    text-decoration: none;
-    color: #ffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.3vmax;
-    font-weight: 400;
-    transition: all 0.3s;
-  }
-   header nav ul li a:hover {
-    color: #ee433d;
-  }
-  .logo {
-    font-size: 1.5vmax;
-  }
-  .logo h1 {
-    cursor: pointer;
-  }
-  
-
-.menu-icon{
+.menu-icon {
   display: none;
   cursor: pointer;
   font-size: 3vmax;
   padding: 5px;
   z-index: 99999;
-
 }
-.act{
+.act {
   transform: translateX(100%);
   display: none;
 }
-.menu{
-position: absolute;
-background-color: #03091D;
-width: 100%;
-padding: 3vmax 0;
-justify-content: center;
-align-items: center;
-z-index: 99;
-left: -100%;
-top: 0;
-transition: all 0.5s;
+.menu {
+  position: fixed;
+  background-color: #03091d;
+  width: 100%;
+  padding: 3vmax 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  left: -100%;
+  top: 5vmax;
+  transition: all 0.5s;
 }
-.m-nav ul{
+.m-nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 2vmax;
 }
-.m-nav ul li{
+.m-nav ul li {
   list-style: none;
 }
-.m-nav ul li a{
+.m-nav ul li a {
   color: #fff;
   font-size: 3vmax;
   text-decoration: none;
 }
 @media (width<600px) {
-  header{
-    padding:  0 2vmax;
+  header {
+    padding: 0 2vmax;
+    width: calc(100% - 4vmax);
   }
-  .menu-icon{
+  .menu-icon {
     display: flex;
   }
-  .act{
+  .act {
     display: flex;
   }
-  .nav{
+  .nav {
     display: none;
   }
 }

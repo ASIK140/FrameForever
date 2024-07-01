@@ -320,6 +320,7 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   align-items: center;
   text-align: center;
   line-height: 1;
+  opacity: 0;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 11;
@@ -330,8 +331,8 @@ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   object-fit: cover;
   transition: all 0.5s;
 }
-.box:hover img {
-  transform: scale(1.2);
+.box:hover span {
+  opacity: 1;
 }
 .boxs-v2 {
   display: flex;
@@ -574,14 +575,15 @@ footer .con {
   display: none;
 }
 .menu{
-position: absolute;
+position: fixed;
 background-color: #03091D;
 width: 100%;
 padding: 3vmax 0;
 justify-content: center;
 align-items: center;
-z-index: 99;
+z-index: 9999;
 left: -100%;
+top: 5vmax;
 transition: all 0.5s;
 }
 .m-nav ul{
@@ -615,6 +617,7 @@ transition: all 0.5s;
   }
   #p1 header {
     padding: 0 2vmax;
+    width: calc(100% - 4vmax);
   }
   .nav {
     display: none;

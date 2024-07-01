@@ -1,91 +1,165 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
     <!-- Fontawesome icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
+    <header class="header" style="width: 100%">
+      <div class="logo">
+        <img src="../asse/logo.png" height="60px" alt="" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="m-nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./service.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
 
-    
-    <section class = "contact-section">
-      <div class = "contact-bg">
+    <section class="contact-section">
+      <div class="contact-bg">
         <h3>Get in Touch with Us</h3>
         <h2>contact us</h2>
-        <div class = "line">
+        <div class="line">
           <div></div>
           <div></div>
           <div></div>
         </div>
-        <p class = "text">Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
+        <p class="text">
+          Want to get in touch? We'd love to hear from you. Here's how you can
+          reach us.
+        </p>
       </div>
 
-
-      <div class = "contact-body">
-        <div class = "contact-info">
+      <div class="contact-body">
+        <div class="contact-info">
           <div>
-            <span><i class = "fas fa-mobile-alt"></i></span>
+            <span><i class="fas fa-mobile-alt"></i></span>
             <span>Phone No.</span>
-            <span class = "text">+91 7001430502 <br>+91 6294604181</span>
+            <span class="text">+91 7001430502 <br />+91 6294604181</span>
           </div>
           <div>
-            <span><i class = "fas fa-envelope-open"></i></span>
+            <span><i class="fas fa-envelope-open"></i></span>
             <span>E-mail</span>
-            <span class = "text">info@frameforever.in <br> support@frameforever.in</span>
+            <a href="mailto:info@frameforever.in" style="text-decoration: none; color: black;">
+              <span class="text">info@frameforever.in </span>
+            </a>
+            <a href="mailto:support@frameforever.in" style="text-decoration: none; color: black;">
+              <span class="text">support@frameforever.in</span>
+            </a>
           </div>
           <div>
-            <span><i class = "fas fa-map-marker-alt"></i></span>
+            <span><i class="fas fa-map-marker-alt"></i></span>
             <span>Address</span>
-            <span class = "text"> Egra, Purba Medinipur, West Bengal 721429</span>
+            <span class="text"> Egra, Purba Medinipur, West Bengal 721429</span>
           </div>
           <div>
-            <span><i class = "fas fa-clock"></i></span>
+            <span><i class="fas fa-clock"></i></span>
             <span>Opening Hours</span>
-            <span class = "text">Monday - Friday (9:00 AM to 5:00 PM)</span>
+            <span class="text">Monday - Sunday (24x7)</span>
           </div>
         </div>
-
-        <div class = "contact-form">
+<!-- 
+        <div class="contact-form">
           <form>
             <div>
-              <input type = "text" class = "form-control" placeholder="First Name">
-              <input type = "text" class = "form-control" placeholder="Last Name">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="First Name"
+              />
+              <input type="text" class="form-control" placeholder="Last Name" />
             </div>
             <div>
-              <input type = "email" class = "form-control" placeholder="E-mail">
-              <input type = "text" class = "form-control" placeholder="Phone">
+              <input type="email" class="form-control" placeholder="E-mail" />
+              <input type="text" class="form-control" placeholder="Phone" />
             </div>
-            <textarea rows = "5" placeholder="Message" class = "form-control"></textarea>
-            <input type = "submit" class = "send-btn" value = "send message">
+            <textarea
+              rows="5"
+              placeholder="Message"
+              class="form-control"
+            ></textarea>
+            <input type="submit" class="send-btn" value="send message" />
           </form>
 
           <div>
-            <img src = "image/contact-png.png" alt = "">
+            <img src="image/contact-png.png" alt="" />
           </div>
-        </div>
+        </div> -->
       </div>
 
-      <div class = "map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.725439956653!2d87.52736377433243!3d21.906646057050658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8915c94917d26c87%3A0x9464f738392f8fc7!2sFrame%20Forever!5e0!3m2!1sen!2sin!4v1719767620890!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.725439956653!2d87.52736377433243!3d21.906646057050658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8915c94917d26c87%3A0x9464f738392f8fc7!2sFrame%20Forever!5e0!3m2!1sen!2sin!4v1719767620890!5m2!1sen!2sin"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
 
-      <div class = "contact-footer">
+      <div class="contact-footer">
         <h3>Follow Us</h3>
-        <div class = "social-links">
-          <a href = "#" class = "fab fa-facebook-f"></a>
-          <a href = "#" class = "fab fa-instagram"></a>
-          <a href = "#" class = "fab fa-linkedin"></a>
-          <a href = "#" class = "fab fa-youtube"></a>
+        <div class="social-links">
+          <a
+            href="https://www.facebook.com/photography.m.s.egra?mibextid=ZbWKwL"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="https://wa.me/7063365583">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/manik.sahoo.52/?utm_source=qr&igsh=MTlkZzJ6aDhtMnlocQ%3D%3D"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://maps.app.goo.gl/3fYf4pie4Uctgc7P7" target="_blank">
+            <i class="fa-solid fa-map"></i>
+          </a>
         </div>
       </div>
     </section>
-
-    
-
   </body>
+  <script src="../scripts/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/8cfc6428ac.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
