@@ -279,12 +279,14 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -99;
-  padding: 5vmax 0;
+  padding: 2vmax 0;
 }
 .p3-h1 {
   font-size: 4vmax;
   text-align: center;
 text-transform: uppercase;
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
 }
 .boxs {
   display: flex;
@@ -294,9 +296,8 @@ text-transform: uppercase;
   gap: 2vmax;
 }
 .box {
-  height: 20vmax;
-  width: 20vmax;
-  background-color: #820300;
+  height: 15vmax;
+  width: 15vmax;
   border-radius: 0.5vmax;
   display: flex;
   justify-content: center;
@@ -305,15 +306,12 @@ text-transform: uppercase;
   position: relative;
   overflow: hidden;
 }
-.box:hover span {
-  opacity: 1;
-}
+
 .box span {
   position: absolute;
   color: #ffff;
   transition: all 0.4s;
-  opacity: 0;
-  font-size: 2.5vmax;
+  font-size: 2vmax;
   font-weight: 700;
   height: 100%;
   width: 100%;
@@ -324,11 +322,16 @@ text-transform: uppercase;
   line-height: 1;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.3);
+  z-index: 11;
 }
 .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 0.5s;
+}
+.box:hover img {
+  transform: scale(1.2);
 }
 .boxs-v2 {
   display: flex;
@@ -363,16 +366,14 @@ text-transform: uppercase;
   position: absolute;
   z-index: 99;
   margin-top: 0;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.5s;
   text-align: center;
   font-size: 1.8vmax;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 
 }
-.box-v2:hover h1 {
-  opacity: 1;
-}
+
 .box-v2 img {
   height: 100%;
   width: 100%;
@@ -474,19 +475,13 @@ text-transform: uppercase;
   font-size: 1.5vmax;
   line-height: 1;
   font-weight: 500;
+  text-align: center;
+  margin-top: 1vmax;
 }
 .b-box img{
-  height: 15vmax;
+  height: 80%;
   width: 100%;
   object-fit: cover;
-}
-.b-text{
-  padding: 1vmax;
-}
-.b-text p{
-  margin-top: 5px;
-  text-align: justify;
-  font-size: 1vmax;
 }
 footer {
   display: flex;
@@ -516,10 +511,9 @@ footer nav ul li a {
 footer nav ul li:hover {
   transform: translateX(10px);
 }
-footer .logo h1 {
-  text-align: center;
-  color: #ffff;
-  font-size: 3vmax;
+footer .logo img {
+  height: 5vmax;
+  margin-bottom: 1.5vmax;
 }
 .icons {
   display: flex;
