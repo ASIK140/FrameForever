@@ -1,0 +1,58 @@
+.effect01 {
+    animation: effect01;
+    animation-timeline: view(50% auto);
+  }
+  @keyframes effect01 {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  .effect02 {
+    animation: effect02;
+    animation-timeline: view(70% auto);
+  }
+  @keyframes effect02 {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .effect03 {
+    animation: effect03;
+    animation-timeline: view(50% auto);
+  }
+  @keyframes effect03 {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .effect04 {
+    animation: effect04;
+    animation-timeline: view(50% auto);
+  }
+  @keyframes effect04 {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
